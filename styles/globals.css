@@ -1,3 +1,38 @@
 @tailwind base;
+@layer base {
+  /*
+  Custom TailwindCSS Preflight based on Josh's Custom Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+  html,
+  body {
+    @apply h-full;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply break-words;
+  }
+  #root,
+  #__next {
+    @apply isolate;
+  }
+}
 @tailwind components;
 @tailwind utilities;
